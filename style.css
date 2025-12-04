@@ -1,0 +1,117 @@
+body {
+            background-color: #a8dfff;
+            color: rgb(0, 17, 255);
+        }
+        nav {
+            text-align: center;
+            transform: translateY(-10px);
+            background-color: #001aff;
+            padding: 10px;
+        }
+        nav a {
+            text-align: center;
+            color: white;
+            margin-right: 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+body {
+    background-color: #a8dfff;
+    color: rgb(0, 17, 255);
+  }
+
+  header {
+    background-color: #002fff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}   
+
+section {
+    
+    padding: 20px;
+    max-width: 1400px;
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.imagens {
+    max-width: 100%;
+    
+    height: auto;
+}
+
+@media (max-width: 900px) {
+    body {
+        padding: 10px;
+    }
+
+    .tecnologia {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
+
+/* CONTAINER DO CARROSSEL */
+.carrossel {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  border-radius: 15px;
+  margin: 40px auto;
+  background: #ffffff;
+}
+
+/* LINHA DAS IMAGENS */
+.carrossel-inner {
+  display: flex;
+  width: 100%;
+  transition: transform 0.6s ease;
+}
+
+/* IMAGENS */
+.carrossel-inner img {
+  flex: 0 0 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* ---------------------------- */
+/*   RESPONSIVIDADE REAL        */
+/* ---------------------------- */
+
+@media (max-width: 900px) {
+  .carrossel {
+    max-width: 95%;
+    border-radius: 12px;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .carrossel {
+    aspect-ratio: 4/3;   /* Ajusta o formato no celular */
+    border-radius: 10px;
+  }
+
+  .carrossel-inner img {
+    object-fit: cover;
+  }
+}
+
+@media (max-width: 420px) {
+  .carrossel {
+    aspect-ratio: 1/1;   /* Quadrado em telas MUITO pequenas */
+  }
+}
